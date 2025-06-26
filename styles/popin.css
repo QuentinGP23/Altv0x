@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+#Bot dialog,
+#Bot span,
+#Bot img,
+#Bot h2,
+#Bot p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  box-sizing: border-box;
+}
+
+dialog#Bot {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  border: 0;
+  padding: 0;
+}
+#Bot h2,
+#Bot p,
+#Bot span {
+  color: #1f1e1e;
+  font-family: "Outfit", sans-serif;
+}
+#Bot h2 {
+  font-size: 74px;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+}
+#Bot p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+#Bot .popin-bg {
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+#Bot .card-alt {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-content: center;
+}
+#Bot #Card1 {
+  top: 40px;
+  background-color: #79d802;
+}
+#Bot #Card2 {
+  z-index: 10;
+  left: 40px;
+}
+#Bot #Card3 {
+  z-index: 10;
+  height: fit-content;
+  width: fit-content;
+    align-self: end;
+    right: 55px;
+    top: 40px;
+    background-color: #FAD605;
+}
+#Bot #Card3 .b {
+    padding:16px 32px;
+}
+#Bot #Card4{
+    background-color: #F6F6F6;
+}
+#Bot #Card5{
+    width: fit-content;
+    background-color: #0900FF;
+    top:100px;
+    left: 122px;;
+}
+#Bot #Card5 .b{
+    padding:32px 0;
+}
+#CardAlt1{
+    top:70px;
+}
+#Bot #Card6{
+    width: fit-content;
+    background-color: #F6F6F6;
+    left: 160px;
+}
+#Bot #Card6 p{
+    max-width:296px;
+}
+#Bot .Warning{
+    padding:0 32px;
+    gap:16px;
+    color: #F6F6F6;
+}
+#Bot .double{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#Bot .double + .double {
+    margin:72px 0 0 0;} 
+#Bot .popin-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center;
+  object-fit: cover;
+}
+#Bot .container {
+  width: calc(100% - 32px);
+    max-width: 1606px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 72px 160px;
+}
+#Bot .card {
+  grid-area: 1 / 1;
+  position: relative;
+  border: 1px solid #1f1e1e;
+  border-radius: 20px 20px 16px 16px;
+  background-color: #f96618;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+#Bot .card .t {
+  background-color: #1f1e1e;
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 16px 16px 0 0;
+}
+#Bot .card .t > div {
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1/1;
+}
+#Bot .card .b {
+  padding: 32px;
+  border-radius: 0 0 16px 16px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+/* ...existing code... */
+.marquee {
+  width: 510px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee__inner {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee__inner .Warning {
+  display: inline-flex;
+  align-items: center;
+  font-size: 74px;
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  color: #1f1e1e;
+  margin-right: 64px;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ...existing code... */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
