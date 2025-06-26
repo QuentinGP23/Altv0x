@@ -1,0 +1,528 @@
+:root {
+  --blue-light: #789ff2;
+  --gray-light: #c8c8c8;
+  --white: #ffffff;
+  --black: #000000;
+  --blue-dark: #153b89;
+  --blue-medium: #2e529d;
+  --gray-medium: #d9d9d9;
+  --black-light: #161515;
+  --blue-deep: #0c2557;
+  --red-80: #ce4545cc;
+  --red-90: #ce4545e6;
+  --black-deep: #020200;
+  --green-dark: #090800;
+  --green-darker: #0a0800;
+  --brown-dark: #351808;
+  --yellow: #f9d505;
+  --yellow-light: #fad605;
+  --gray-very-light: #fbf1ee;
+}
+@font-face {
+  font-family: "BianzhiDai-Base";
+  src: url("../fonts/bianzhidai_noBG-Base.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Brush";
+  src: url("../fonts/bianzhidai_noBG-Brush.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Bubble";
+  src: url("../fonts/bianzhidai_noBG-Bubble.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Cloud";
+  src: url("../fonts/bianzhidai_noBG-Cloud.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Cube";
+  src: url("../fonts/bianzhidai_noBG-Cube.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Messier";
+  src: url("../fonts/bianzhidai_noBG-Messier.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Messy";
+  src: url("../fonts/bianzhidai_noBG-Messy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Pearl";
+  src: url("../fonts/bianzhidai_noBG-Pearl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Ring";
+  src: url("../fonts/bianzhidai_noBG-Ring.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BianzhiDai-Stitches";
+  src: url("../fonts/bianzhidai_noBG-Stitches.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PP Hatton";
+  src: url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.eot");
+  src: url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3147420f5573b22000d1e233cae7cdc9.svg#PP Hatton")
+      format("svg");
+}
+@font-face {
+  font-family: "GT America Mono Trial Rg";
+  src: url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.eot");
+  src: url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/60980250afb8f0b8d2da6a29c46c141c.svg#GT America Mono Trial Rg")
+      format("svg");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+body {
+  background-color: var(--black-light);
+  color: var(--gray-light);
+  font-family: "BianzhiDai-Base", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+h1 {
+  text-align: center;
+  font-family: "PP Hatton", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  position: relative;
+}
+h1 span {
+  font-family: "BianzhiDai-Base", sans-serif;
+  color: var(--red-90);
+  position: absolute;
+}
+#Write {
+  top: 8px;
+  right: -105px;
+}
+#Free {
+  top: 96px;
+  right: -88px;
+}
+h1:before,
+h1:after {
+  content: "";
+  height: 10px;
+  background: var(--red-80);
+  position: absolute;
+  display: block;
+}
+h1:before {
+  content: "";
+  width: 300px;
+  top: 25px;
+  left: 145px;
+  transform: rotate(-7deg);
+}
+h1:after {
+  content: "";
+  width: 425px;
+  top: 111px;
+  left: 98px;
+  transform: rotate(-7deg);
+}
+b {
+  font-weight: 700;
+}
+header,
+main,
+footer {
+  z-index: 1;
+}
+header,
+main {
+  max-width: 1200px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 240px 0;
+  position: relative;
+}
+#bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: grid;
+  pointer-events: none;
+}
+.bg-point {
+  width: 2px;
+  height: 2px;
+  margin: auto;
+  border-radius: 50%;
+  background: #fff;
+  transition: background 0.3s, border-radius 0.3s;
+  position: relative;
+  pointer-events: auto;
+}
+
+.bg-point::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -14px;
+  width: 30px;
+  height: 30px;
+}
+.somm {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.somm p {
+  font-size: 16px;
+  font-family: "GT America Mono Trial Rg", sans-serif;
+  color: var(--blue-light);
+  text-transform: uppercase;
+}
+header .popin {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 272px;
+}
+header .popin > img {
+  width: 100%;
+  height: auto;
+  min-height: 126px;
+  background-color: var(--gray-medium);
+}
+
+.popin {
+  border: 2px solid var(--blue-light);
+  font-family: "GT America Mono Trial Rg", sans-serif;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.popin .t {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 2px solid var(--blue-light);
+}
+.popin .t > p{
+    text-transform: uppercase;
+}
+.popin .b {
+  padding: 8px 14px;
+}
+.popin .b > * {
+  margin: 24px 0 0 0;
+}
+
+.popin .b > img {
+  min-width: 16px;
+  min-height: 16px;
+}
+.popin > .b li b {
+  font-family: "bianzhidai-Ring", sans-serif;
+}
+.popin > .b li + li {
+  margin: 4px 0 0 0;
+}
+.popin > .b > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 16px auto auto;
+}
+.popin .b > .related{
+    display: flex;
+    gap:10px 25px;
+    flex-wrap:wrap;
+    margin:30px 0 14px 0;
+}
+.cont {
+  display: flex;
+  gap: 126px;
+}
+.cont > .popin {
+  width: fit-content;
+  height: fit-content;
+  max-width: 650px;
+}
+.img-txt {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.img-txt div > span {
+  font-family: "bianzhidai-Pearl", sans-serif;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  display: block;
+}
+#Ghost1 {
+  justify-content: flex-end;
+}
+#Ghost2 > .popin:first-child {
+  order: 2;
+}
+#Ghost1 > .popin:first-child {
+  margin: 0 0 26px;
+}
+.cont > .popin:first-child {
+  max-width: 430px;
+}
+#Ghost2 > .popin:last-child {
+  margin: 100px 0 0;
+}
+#Ghost3 > .popin:last-child {
+  margin: 120px 0 0;
+}
+.cont > .popin:last-child {
+  max-width: 650px;
+  margin: 56px 0 0 0;
+}
+.txt-alt {
+  display: block;
+  font-family: "bianzhidai-Base", sans-serif;
+  font-weight: 100;
+}
+.gif {
+  width: 100%;
+  height: auto;
+}
+#Glossaire {
+  top: 126px;
+  left: 75px;
+}
+#Manifesto {
+  right: 0;
+  bottom: 110px;
+}
+#About {
+  bottom: 0;
+  left: 150px;
+}
+#Mani {
+  margin: 120px 0;
+}
+#Mani > div {
+  margin: auto;
+}
+.b > .buttons {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 16px 0;
+}
+.b > .buttons + span{
+    font-size:14px;
+}
+.btn-download {
+  width: calc(100% - 32px);
+  background: url("../media/svg/dlbutton.svg") no-repeat center center;
+  background-size: cover;
+  height: 32px;
+  cursor: pointer;
+}
+.btn-copy {
+  cursor: pointer;
+}
+.cont + .cont {
+  margin: 120px 0 0 0;
+}
+footer {
+  padding: 220px 0 270px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+footer > div {
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  margin: auto;
+}
+footer > div img {
+  background-color: var(--gray-medium);
+  height: fit-content;
+}
+footer > .t {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 70px;
+}
+footer > .t img:first-child {
+  margin: 0 0 50px 0;
+}
+footer > .t img:last-child {
+  margin: 0 100px 0 0;
+}
+footer > .m {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  font-family: "bianzhiDai-Brush", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 920px;
+}
+footer > .m p:first-child {
+  margin: 0 0 0 auto;
+}
+footer > .m p:last-child {
+  margin: 0 auto 0 0;
+}
+footer > .b {
+  display: flex;
+  justify-content: space-between;
+}
+footer > .b > div {
+  display: flex;
+  gap: 30px;
+}
+footer > .b > div img:first-child {
+  margin: 12px 0 0 0;
+}
+footer > .b > div img:last-child {
+  margin: 44px 0 0 0;
+}
+footer > .b > img {
+  margin: 0 250px 0 0;
+}
+@media (max-width: 1024px) {
+  #Gloss {
+    top: 100px;
+    left: 40px;
+  }
+  #Manifesto {
+    right: 0;
+    bottom: 80px;
+  }
+  #About {
+    bottom: 0;
+    left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  #Gloss {
+    top: 60px;
+    left: 20px;
+  }
+  #Manifesto {
+    right: 0;
+    bottom: 40px;
+  }
+  #About {
+    bottom: 0;
+    left: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Gloss {
+    top: 20px;
+    left: 10px;
+  }
+  #Manifesto {
+    right: 0;
+    bottom: 10px;
+  }
+  #About {
+    bottom: 0;
+    left: 10px;
+  }
+}
