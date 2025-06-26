@@ -422,6 +422,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  background: url('../media/svg/Footer.svg');
+  background-repeat: repeat-x;
+  background-position:center bottom;
 }
 footer > div {
   width: calc(100% - 32px);
