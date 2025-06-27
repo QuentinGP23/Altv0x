@@ -2,13 +2,10 @@ let footerTimer = null;
 let footerVisible = false;
 
 function isFooterInView() {
-  const footer = document.querySelector('footer');
+  const footer = document.querySelector("footer");
   if (!footer) return false;
   const rect = footer.getBoundingClientRect();
-  return (
-    rect.top < window.innerHeight &&
-    rect.bottom > 0
-  );
+  return rect.top < window.innerHeight && rect.bottom > 0;
 }
 
 function checkFooter() {
@@ -16,7 +13,7 @@ function checkFooter() {
     if (!footerVisible) {
       footerVisible = true;
       footerTimer = setTimeout(() => {
-        window.location.href = "popin.html";
+        window.location.href = "Modo.html";
       }, 5000);
     }
   } else {
@@ -28,6 +25,6 @@ function checkFooter() {
   }
 }
 
-window.addEventListener('scroll', checkFooter);
-window.addEventListener('resize', checkFooter);
-window.addEventListener('DOMContentLoaded', checkFooter);
+window.addEventListener("scroll", checkFooter);
+window.addEventListener("resize", checkFooter);
+window.addEventListener("DOMContentLoaded", checkFooter);
