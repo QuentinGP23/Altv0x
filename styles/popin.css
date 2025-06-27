@@ -91,7 +91,7 @@ dialog#Bot {
     width: fit-content;
     background-color: #0900FF;
     top:100px;
-    left: 122px;;
+    left: 80px;;
 }
 #Bot #Card5 .b{
     padding:32px 0;
@@ -102,7 +102,7 @@ dialog#Bot {
 #Bot #Card6{
     width: fit-content;
     background-color: #F6F6F6;
-    left: 160px;
+    left: 100px;
 }
 #Bot #Card6 p{
     max-width:296px;
