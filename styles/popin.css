@@ -34,6 +34,9 @@ dialog#Bot {
   font-weight: 700;
   font-family: "Outfit", sans-serif;
 }
+#Bot  .card p{
+    text-transform: uppercase;
+}
 #Bot p {
   font-size: 24px;
   font-weight: 500;
@@ -65,6 +68,9 @@ dialog#Bot {
 #Bot #Card2 {
   z-index: 10;
   left: 40px;
+}
+#Bot #Card2 p{
+    max-width:369px;
 }
 #Bot #Card3 {
   z-index: 10;
