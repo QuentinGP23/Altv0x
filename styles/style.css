@@ -175,11 +175,11 @@ h1 span {
 }
 #Write {
   top: 8px;
-  right: -105px;
+  right: -196px;
 }
 #Free {
   top: 96px;
-  right: -88px;
+  right: -230px;
 }
 h1:before,
 h1:after {
@@ -193,14 +193,14 @@ h1:before {
   content: "";
   width: 300px;
   top: 25px;
-  left: 145px;
+  left: 52px;
   transform: rotate(-7deg);
 }
 h1:after {
   content: "";
-  width: 425px;
+  width: 445px;
   top: 111px;
-  left: 98px;
+  left: -18px;
   transform: rotate(-7deg);
 }
 b {
@@ -269,6 +269,9 @@ header .popin {
   right: 0;
   width: 272px;
 }
+header .popin .b > img {
+  margin: 0;
+}
 header .popin > img {
   width: 100%;
   height: auto;
@@ -291,8 +294,8 @@ header .popin > img {
   padding: 8px 14px;
   border-bottom: 2px solid var(--blue-light);
 }
-.popin .t > p{
-    text-transform: uppercase;
+.popin .t > p {
+  text-transform: uppercase;
 }
 .popin .b {
   padding: 8px 14px;
@@ -321,11 +324,11 @@ header .popin > img {
   border-radius: 50%;
   margin: 16px auto auto;
 }
-.popin .b > .related{
-    display: flex;
-    gap:10px 25px;
-    flex-wrap:wrap;
-    margin:30px 0 14px 0;
+.popin .b > .related {
+  display: flex;
+  gap: 10px 25px;
+  flex-wrap: wrap;
+  margin: 30px 0 14px 0;
 }
 .cont {
   display: flex;
@@ -401,8 +404,8 @@ header .popin > img {
   gap: 8px;
   margin: 0 0 16px 0;
 }
-.b > .buttons + span{
-    font-size:14px;
+.b > .buttons + span {
+  font-size: 14px;
 }
 .btn-download {
   width: calc(100% - 32px);
@@ -418,13 +421,13 @@ header .popin > img {
   margin: 120px 0 0 0;
 }
 footer {
-  padding: 220px 0 270px 0;
+  /* padding: 220px 0 270px 0; */
   display: flex;
   flex-direction: column;
   gap: 26px;
-  background: url('../media/svg/Footer.svg');
+  background: url("../media/svg/Footer.svg");
   background-repeat: repeat-x;
-  background-position:center bottom;
+  background-position: center bottom;
 }
 footer > div {
   width: calc(100% - 32px);
@@ -434,6 +437,11 @@ footer > div {
 footer > div img {
   background-color: var(--gray-medium);
   height: fit-content;
+  opacity: 0;
+}
+header .popin .b {
+  max-height: 150px;
+  overflow: hidden;
 }
 footer > .t {
   display: flex;
@@ -452,7 +460,7 @@ footer > .m {
   flex-direction: column;
   gap: 42px;
   font-family: "bianzhiDai-Brush", sans-serif;
-  font-size: 72px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;

@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site bloqué par le gouvernement</title>
-    <link rel="stylesheet" href="./styles/popin.css">
+    <link rel="stylesheet" href="./styles/popin.css" />
     <script src="./scripts/warning.js"></script>
     <script src="./scripts/chrono.js"></script>
-</head>
-<body>
+    <link rel="icon" href="./media/favicon/Logo-popin.ico" />
+  </head>
+  <body>
     <dialog id="Bot" open>
-        <div class="container">
-            <div class="double">
-                <div class="card-alt" id="CardAlt1">
-                    <div class="card" id="Card1">
-                        <div class="t">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="b">
-                        </div>
-                    </div>
-                    <div class="card" id="Card2">
-                        <div class="t">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="b">
-                            <h2>ERROR</h2>
-                            <p>Cette page est bloquée pour non-respect des règles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-alt">
-                    <div class="card" id="Card3">
-                        <div class="t">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="b">
-                            <h2>X</h2>
-                        </div>
-                    </div>
-                    <div class="card" id="Card4">
-                        <div class="t">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="b">
-                            <img src="./media/svg/Logo-popin.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="double">
+          <div class="card-alt" id="CardAlt1">
+            <div class="card" id="Card1">
+              <div class="t">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="b"></div>
             </div>
-            <div class="double">
-                <div class="card" id="Card5">
-                    <div class="t">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="b">
-                        <div class="marquee">
-                            <div class="marquee__inner">
-                                <h2 class="Warning">ATTENTION<img alt="Warning" src="./media/svg/IconExclamation.svg">
-                                </h2>
-                                <h2 class="Warning">ATTENTION<img alt="Warning" src="./media/svg/IconExclamation.svg">
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="Card6">
-                    <div class="t">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="b">
-                        <p>Vous allez être redirigés en dehors du site dans :</p>
-                        <h2 id="Chrono"><span>0</span><span>5</span><span>S</span></h2>
-                    </div>
-                </div>
+            <div class="card" id="Card2">
+              <div class="t">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="b">
+                <h2>ERREUR</h2>
+                <p>Cette page est bloquée pour non-respect des règles.</p>
+              </div>
             </div>
+          </div>
+          <div class="card-alt">
+            <div class="card" id="Card3">
+              <div class="t">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="b">
+                <h2>X</h2>
+              </div>
+            </div>
+            <div class="card" id="Card4">
+              <div class="t">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="b">
+                <img src="./media/svg/Logo-popin.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="popin-bg">
-            <img src="../media/svg/Backgroundpopin.svg" alt="Background Image">
+        <div class="double">
+          <div class="card" id="Card5">
+            <div class="t">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="b">
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <h2 class="Warning">
+                    ATTENTION<img
+                      alt="Warning"
+                      src="./media/svg/IconExclamation.svg"
+                    />
+                  </h2>
+                  <h2 class="Warning">
+                    ATTENTION<img
+                      alt="Warning"
+                      src="./media/svg/IconExclamation.svg"
+                    />
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="Card6">
+            <div class="t">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="b">
+              <p>Vous allez être redirigés en dehors du site dans :</p>
+              <h2 id="Chrono"><span>0</span><span>5</span><span>S</span></h2>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="popin-bg">
+        <img src="../media/svg/Backgroundpopin.svg" alt="Background Image" />
+      </div>
     </dialog>
-</body>
+  </body>
 </html>

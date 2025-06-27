@@ -34,8 +34,8 @@ dialog#Bot {
   font-weight: 700;
   font-family: "Outfit", sans-serif;
 }
-#Bot  .card p{
-    text-transform: uppercase;
+#Bot .card p {
+  text-transform: uppercase;
 }
 #Bot p {
   font-size: 24px;
@@ -69,56 +69,57 @@ dialog#Bot {
   z-index: 10;
   left: 40px;
 }
-#Bot #Card2 p{
-    max-width:369px;
+#Bot #Card2 p {
+  max-width: 369px;
 }
 #Bot #Card3 {
   z-index: 10;
   height: fit-content;
   width: fit-content;
-    align-self: end;
-    right: 55px;
-    top: 40px;
-    background-color: #FAD605;
+  align-self: end;
+  right: 55px;
+  top: 40px;
+  background-color: #fad605;
 }
 #Bot #Card3 .b {
-    padding:16px 32px;
+  padding: 16px 32px;
 }
-#Bot #Card4{
-    background-color: #F6F6F6;
+#Bot #Card4 {
+  background-color: #f6f6f6;
 }
-#Bot #Card5{
-    width: fit-content;
-    background-color: #0900FF;
-    top:100px;
-    left: 80px;;
+#Bot #Card5 {
+  width: fit-content;
+  background-color: #0900ff;
+  bottom: 24px;
+  left: 80px;
 }
-#Bot #Card5 .b{
-    padding:32px 0;
+#Bot #Card5 .b {
+  padding: 32px 0;
 }
-#CardAlt1{
-    top:70px;
+#CardAlt1 {
+  top: 0;
 }
-#Bot #Card6{
-    width: fit-content;
-    background-color: #F6F6F6;
-    left: 100px;
+#Bot #Card6 {
+  width: fit-content;
+  background-color: #f6f6f6;
+  left: 100px;
 }
-#Bot #Card6 p{
-    max-width:296px;
+#Bot #Card6 p {
+  max-width: 296px;
 }
-#Bot .Warning{
-    padding:0 32px;
-    gap:16px;
-    color: #F6F6F6;
+#Bot .Warning {
+  padding: 0 16px;
+  gap: 16px;
+  color: #f6f6f6;
 }
-#Bot .double{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+#Bot .double {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 #Bot .double + .double {
-    margin:72px 0 0 0;} 
+  margin: 48px 0 0 0;
+}
 #Bot .popin-bg img {
   display: block;
   width: 100%;
@@ -129,10 +130,10 @@ dialog#Bot {
 }
 #Bot .container {
   width: calc(100% - 32px);
-    max-width: 1606px;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 72px 160px;
+  max-width: 1606px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 42px 160px 0 160px;
 }
 #Bot .card {
   grid-area: 1 / 1;
